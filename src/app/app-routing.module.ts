@@ -4,14 +4,14 @@ import { UserListComponent } from './user/user-list/user-list.component';
 import { PreloadAllModules } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'login', pathMatch: 'full' },
+  { path: '', redirectTo: 'user', pathMatch: 'full' },
   { path: '*', redirectTo: 'login', pathMatch: 'full' },
   {
     path: 'home',
     component: UserListComponent,
   },
   {
-    path: 'login',
+    path: 'user',
     loadChildren: () => import('./user/user.module').then((m) => m.UserModule),
   },
 ];

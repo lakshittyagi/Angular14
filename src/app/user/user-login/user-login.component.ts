@@ -16,5 +16,7 @@ export class UserLoginComponent implements OnInit {
     console.log(form);
     // form.reset();
   }
+
+  //Used declarative forms here in this component
 }
 100;

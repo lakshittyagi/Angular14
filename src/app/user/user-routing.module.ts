@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { UserListComponent } from './user-list/user-list.component';
 import { PreloadAllModules } from '@angular/router';
 import { UserLoginComponent } from './user-login/user-login.component';
+import { UserSignupComponent } from './user-signup/user-signup.component';
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
   { path: '*', redirectTo: 'login', pathMatch: 'full' },
@@ -10,6 +11,10 @@ const routes: Routes = [
   {
     path: 'list',
     component: UserListComponent,
+  },
+  {
+    path: 'signup',
+    component: UserSignupComponent,
   },
   {
     path: 'login',
