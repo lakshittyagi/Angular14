@@ -13,8 +13,8 @@ export class UserLoginComponent implements OnInit {
   ngOnInit(): void {}
 
   login(form: NgForm) {
-    console.log(form.value);
-    form.reset();
+    console.log(form);
+    // form.reset();
   }
 }
 100;
